@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["ScriptHost", "es2017"],
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "./build",
+    "baseUrl": ".",
+    "rootDir": "./src",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2017"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}

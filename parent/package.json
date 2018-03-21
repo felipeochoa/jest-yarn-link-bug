@@ -1,0 +1,42 @@
+{
+  "name": "parent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "skipBabel": true
+      }
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "ts",
+      "tsx"
+    ],
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/build/"
+    ],
+    "transform": {
+      "\\.[jt]sx?$": "ts-jest"
+    },
+    "testMatch": [
+      "**/__tests__/*.{js,jsx,ts,tsx}"
+    ]
+  },
+  "dependencies": {
+    "child": "../child",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.2",
+    "typescript": "^2.7.2"
+  }
+}
